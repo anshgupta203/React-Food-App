@@ -1,3 +1,5 @@
+
+
 import { useEffect, useState } from "react";
 
 import styles from "./AvailableMeals.module.css";
@@ -12,7 +14,7 @@ const AvailableMeals = () => {
   useEffect(() => {
     const fetchMeals = async () => {
       const response = await fetch(
-        "https://react-http-2e4e7-default-rtdb.firebaseio.com/meals.json"
+        "https://food-db-63fe7-default-rtdb.asia-southeast1.firebasedatabase.app//meals.json"
       );
 
       if(!response.ok){
